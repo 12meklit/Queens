@@ -1,0 +1,169 @@
+<html>
+<head>
+    <title>Queens restorant</title>
+    <style>
+        .wrapper {
+  margin: 0 auto;
+  width: 400px;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="checkbox"] {
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #e7b14d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #e6b25e;
+}
+    </style>
+     <!-- Icon Font Stylesheet -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+ 
+     <!-- Libraries Stylesheet -->
+     <link href="lib/animate/animate.min.css" rel="stylesheet">
+     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+ 
+     <!-- Customized Bootstrap Stylesheet -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+     <!-- Template Stylesheet -->
+     <link href="css/style.css" rel="stylesheet">
+</head>
+
+     
+     <!-- Navbar & Hero Start -->
+     <div class="container-xxl position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Queen</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0 pe-4">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link ">About</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="menu.html" class="nav-item nav-link">Menu</a>
+                    <a href="order.html" class="nav-item nav-link active"> To order</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="booking.html" class="dropdown-item">Booking</a>
+                            <a href="team.html" class="dropdown-item">Our Team</a>
+                            <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="" class="btn btn-primary py-2 px-4">Book A Table</a>
+            </div>
+        </nav>
+
+        <div class="container-xxl py-5 bg-dark hero-header mb-5">
+            <div class="container text-center my-5 pt-5 pb-4">
+                <h1 class="display-3 text-white mb-3 animated slideInDown">order here</h1>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center text-uppercase">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">order</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+   <div class="wrapper create-coffe"> 
+    <h1>Gate Queens Tasty Food</h1>
+    <form action="/cprocess_order.php"method="POST">
+      
+        <label for="name">your name: </label>
+        <input type ="text" id="name" name="name"><br>
+        <label for="type">choose popular Brakfast</label>
+        <select name="type" id="type">
+            <option value="Chicago Pizza.">   </option>
+            <option value="Neapolitan Pizza">Fatira</option>
+            <option value="Chicago Pizza.">Full</option>
+            <option value="New York Pizza">Ferfer</option>
+            <option value="Detroit Pizza">Enkulal Ferfer</option>
+            <option value="Detroit Pizza">chechebsa</option>
+            <option value="Detroit Pizza">kince</option>
+            <option value="Detroit Pizza">sandwich</option>
+        </select><br>
+        <label for="base">choose special lunch</label><br>
+        <select name="base" id="basd">
+            <option value="Chicago Pizza.">   </option>
+            <option value="Wine">Menchet</option>
+            <option value="Beer">Beyaynet</option>
+            <option value="Cider">Dench Besga</option>
+            <option value="Spirits">Tebs</option>
+            <option value="Spirits">Teferisho</option>
+            <option value="Spirits">Bozena shero</option>
+            <option value="Spirits">Gomen Besga</option>
+        </select><br>
+        <label for="base">choose lovely dinner</label><br>
+        <select name="base" id="basd">
+            <option value="Chicago Pizza.">   </option>
+            <option value="Wine">Mokoroni</option>
+            <option value="Beer">Ruz</option>
+            <option value="Cider">Dench Besga</option>
+            <option value="Spirits">mnchet</option>
+        </select><br>
+      
+          <fieldset>
+            <label>Extra tooping:</label><br>
+            <input type="checkbox" name="toppings[]" value="katch up">mitmita<br/>
+            <input type="checkbox" name="toppings[]" value="peers">Awaze<br/>
+            <input type="checkbox" name="toppings[]" value="garlic">garlic<br/>
+            <input type="checkbox" name="toppings[]" value="olive">olive<br/>
+
+
+            </fieldset>
+            <input type="submit" value="Order Food">
+</form>
+    </div>
+        
+
+</body>
+
+</html>
+ 
+
+ 
+ 
